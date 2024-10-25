@@ -15,7 +15,7 @@ print(MORSE_CODE_DICT)
 print(v)
 
 for i in v:
-    for key,value in MORSE_CODE_DICT.items():
+    for key,value in MORSE_CODE_DICT.items():  #Because key,value can be access using tuples
         if i==value:
             print(i, ":",key)
 
