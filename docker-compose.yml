@@ -1,0 +1,36 @@
+services:
+  webapp1:
+         image: httpd:latest
+         ports:
+               - 1001:80
+         volumes:
+               - /home/rutuja/myweb1:/usr/local/apache2/htdocs
+
+
+  webapp2:
+         image: httpd:latest
+         ports:
+               - 1002:80
+         volumes:
+               - ./myweb2:/usr/local/apache2/htdocs
+
+   webapp3:
+         image: httpd:latest
+         ports:
+               - 1003:80
+         volumes:
+               - ./myweb3:/usr/local/apache2/htdocs
+
+
+  webapp4:
+         image: httpd:latest
+         ports:
+               - 1004:80
+         volumes:
+               - ./myweb4:/usr/local/apache2/htdocs
+
+
+                 
+        
+
+
